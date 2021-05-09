@@ -1,0 +1,107 @@
+@import "./config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+.is-size-2 {
+  font-size: 2.2rem !important;
+}
+
+#top-navbar {
+  padding: 1.3rem 10rem;
+  @include link;
+}
+
+#blog {
+  background: linear-gradient(180deg, #000 50%, #fff 50%);
+
+  .card {
+    background-color: black;
+    h1,
+    div {
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+}
+#logo {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  top: 0;
+  max-width: 6rem;
+}
+#sp-header {
+  @include hero-bg;
+  background-image: url("../img/serviceProvider/Header-image.jpg");
+}
+#ho-header {
+  ::placeholder {
+    color: #b5b5b5;
+  }
+}
+#getStarted {
+  @include hero-bg;
+  background-image: url("../img/serviceProvider/Ready-to-get-started.jpg");
+  p {
+    color: white;
+  }
+}
+#services {
+  .box {
+    height: 11rem;
+    width: 9rem;
+  }
+}
+#testimonials {
+  @include hero-bg;
+  background-image: url("../img/serviceProvider/testimonal.png");
+  img {
+    width: auto;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .card {
+    max-height: 320px;
+  }
+}
+#getTheApp {
+  .container {
+    @include hero-bg;
+    background-size: contain;
+    background-image: url("../img/serviceProvider/App-background.png");
+    padding-left: 7rem;
+  }
+}
+#workFlow {
+  .box {
+    width: fit-content;
+    padding: 0;
+  }
+}
+.dotted-line {
+  width: auto;
+  position: absolute;
+  left: 9rem;
+}
+.footer {
+  h1 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 0.35rem;
+  }
+}
+
+footer {
+  @include link;
+}
+
+@media screen and (min-width: 769px) {
+  .hero.is-large .hero-body {
+    padding: 18rem 14rem;
+  }
+}
